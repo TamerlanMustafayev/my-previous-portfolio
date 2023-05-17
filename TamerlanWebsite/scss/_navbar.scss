@@ -1,0 +1,129 @@
+
+.nav {
+    background-color: $secondary;
+    padding: 0.5rem;
+    margin: 0;
+    height: 3.5rem;
+    z-index: 9999;
+    a {
+        color:white;
+    }
+
+    &__logo {
+        font-size: 22px;
+    }
+    
+    .bars {
+        height: 22px;
+        
+        &.open {
+            .bar1 {
+                transform: rotate(45deg);
+                transform-origin:8px 10px;
+            }
+            .bar2 {
+                opacity: 0;
+                transform: translate(10%);
+            }
+            .bar3 {
+                transform: rotate(-45deg);
+                transform-origin:4px -9px;
+            }
+        }
+
+        > span {
+            border-radius: 5px;
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            transition: all 150ms ease-in-out;
+        } 
+    }
+
+    .hide-for-mobile {
+        @include breakpoint-down(large) {
+            display: none;
+        }
+    }
+    .hamburger {
+        position: relative;
+
+    }
+    
+      
+    .hide-for-desktop {
+         @include breakpoint-up(medium){
+            display: none;
+        }
+    }
+ 
+}
+
+.mobile__menu {
+    visibility: hidden;
+    position: absolute;
+    margin: 0 10px;
+    height: 50vh;
+    top: -50vh;
+    left: 0;
+    right: 0;
+    border-radius: 0px 0px 12px 14px;
+    background-color: white;
+    transition: top 250ms ease-in-out;   
+}
+
+.mobile__menu {
+    @include breakpoint-up(medium){
+       display: none;
+   }
+}
+
+.menu__open {
+    top: 40px;
+    visibility: inherit;
+    top: 40px;
+    z-index: -9999;
+    
+    >a {
+        position: relative;
+        font-size: $font-xl;
+        font-weight: 900;
+        color: $secondary;
+        transition: all 200ms ease-in-out;
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            color:purple;
+        }
+    }
+}
+    
+
+// Desktop
+
+.desktop__links {
+    position: absolute;
+    right: 0;
+
+    .nav__items {
+        >a {
+            font-size: $font-sm;
+            font-weight: 100;
+            margin: 10px;
+            transition: all 200ms ease-in-out;
+            &:hover {
+                color: $primary;
+                transform:scale(1.05);
+            }
+        }
+    }
+    @include breakpoint-down(medium){
+        display: none;
+    }
+
+}
+
