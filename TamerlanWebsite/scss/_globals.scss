@@ -1,4 +1,8 @@
 html {
+<<<<<<< HEAD
+    height: 100%;
+=======
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
     font-size: 100%;
     box-sizing: border-box;
 }
@@ -8,29 +12,58 @@ html {
 }
 
 body {
+<<<<<<< HEAD
+    box-sizing: border-box;
+    height: 100%;
+=======
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
     background-color: $primary;
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans-serif;
     overflow-x:hidden;
     color: white;
+<<<<<<< HEAD
+    align-items: center;
+
+=======
     // height: 300vh;
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
 }
 
 h1 {
     color:$secondary;
+<<<<<<< HEAD
+    font-size: 3rem;
+    font-family: Pacifico, sans-serif;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif ;
+}
+
+=======
     font-size: 2.5rem;
     font-family: Pacifico, sans-serif;
     margin: 0;
     padding: 0;
 }
  
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
 
 
 a, a:visited, a:hover {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+// Container 
+
+=======
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
 
 //Flexbox
 
@@ -48,9 +81,21 @@ a, a:visited, a:hover {
     &-jc-sa {
         justify-content: space-around;
     }
+<<<<<<< HEAD
+    &-jc-se {
+        justify-content: space-evenly;
+    }
     &-ai-c {
         align-items: center;
     }
+    &-ai-r {
+        align-items:end;
+    }
+=======
+    &-ai-c {
+        align-items: center;
+    }
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
 
     &-fd-c {
         flex-direction: column;
@@ -73,6 +118,13 @@ a, a:visited, a:hover {
     padding: 0;
 }
 
+<<<<<<< HEAD
+.line__between__projects {
+    height: 1px;
+    background-color: $primary;
+    margin: 5px 0 0 0;
+}
+=======
 .container {
     
     &--pall {
@@ -106,3 +158,4 @@ a, a:visited, a:hover {
         padding-left: 1.5rem;
     }
 }
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7

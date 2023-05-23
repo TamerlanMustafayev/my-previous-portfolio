@@ -1,5 +1,9 @@
 
 .nav {
+<<<<<<< HEAD
+    position: relative;
+=======
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
     background-color: $secondary;
     padding: 0.5rem;
     margin: 0;
@@ -53,7 +57,11 @@
     
       
     .hide-for-desktop {
+<<<<<<< HEAD
+         @include breakpoint-up(large){
+=======
          @include breakpoint-up(medium){
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
             display: none;
         }
     }
@@ -62,6 +70,67 @@
 
 .mobile__menu {
     visibility: hidden;
+<<<<<<< HEAD
+    top: -100%;
+    position: relative;
+    background-color: #fff;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: -100%;
+    height: 50% ;
+    z-index: 9998;
+    transition: all 350ms ease-in-out;
+
+    .mobile__links {
+        background-color: white;
+        height: 100%;
+        width: auto;
+        font-size: 1.5rem;
+        border-radius: 0 0 12px 12px;
+        transition: all 350ms ease-in-out;
+
+
+        a {
+            transition: all 350ms ease-in-out;
+            color: $secondary;
+        }
+    }
+
+    a:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    
+    
+     
+}
+
+.menu__open {
+    visibility: inherit;
+    top: 0;
+    transition: all 350ms ease-in-out;
+    z-index: 9998;
+    border-radius: 0 0 12px 12px;
+
+    
+    .mobile__links {
+        
+
+        a:hover {
+            transform: scale(1.1);
+            transition: all 350ms ease-in-out;
+            color:purple;
+        }
+    }
+
+    
+    
+}
+
+
+
+
+=======
     position: absolute;
     margin: 0 10px;
     height: 50vh;
@@ -101,12 +170,24 @@
         }
     }
 }
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
     
 
 // Desktop
 
 .desktop__links {
     position: absolute;
+<<<<<<< HEAD
+    right: 1rem;
+ 
+    .nav__items {
+        >a {
+            font-size: 1rem;
+            font-weight: 100;
+            margin: 10px;
+            transition: all 200ms ease-in-out;
+            &:hover { 
+=======
     right: 0;
 
     .nav__items {
@@ -116,6 +197,7 @@
             margin: 10px;
             transition: all 200ms ease-in-out;
             &:hover {
+>>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
                 color: $primary;
                 transform:scale(1.05);
             }

@@ -1,0 +1,77 @@
+.portfolio2 {
+    width: 100%;
+    height:fit-content;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background-color: $secondary;
+
+    .mobile__design {
+        padding: 1rem;
+        width: 100%;
+
+        h3 {
+            color: white;
+            align-self:flex-start;
+        }
+
+
+        img {
+            height: auto;
+            width: 100%;
+            box-shadow: 0px 0px 50px -9px rgba(255,255,255,0.2);
+        }
+
+        img:not(:last-child) {
+            margin-bottom:1.2rem;
+        }
+    }
+    
+    
+
+
+    .portfolio__text {
+        padding: 1rem;
+        h3 {
+            align-self: flex-start;
+            color: white;
+        }
+
+        p {
+            color: white;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+            text-align: start;
+        }
+
+        a {
+            align-self: flex-start;
+            button {
+                cursor: pointer;
+                padding: 0.8rem 1.5rem;
+                margin-top: 1rem;
+                background-color: transparent;
+                border: 1px solid $primary;
+                outline: none;
+                color: white;
+                font-family: Montserrat;
+                font-size: $font-sm; 
+                transition: all 250ms ease-in;
+    
+                &:hover {
+                    border:1px solid $primary;
+                    color: $secondary;
+                    background-color: $primary;
+                }
+            }
+        }
+
+
+
+    }
+
+    
+}
+

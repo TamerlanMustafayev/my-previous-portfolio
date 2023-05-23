@@ -1,0 +1,55 @@
+.aboutMe {
+    height: fit-content;
+    
+    text-align: center;
+    background-color: $secondary;
+    padding: 1.9rem;
+    padding-top: 1.7rem;
+    z-index: 1;
+    color: white;
+
+    h3 {
+
+        margin: 0;
+    }
+
+    p{
+        font-weight: bold;
+        color: white;
+        
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    img {
+        margin-top: 20px;
+        display: block;
+        width: 50%;
+        height: auto;
+        border: 3px solid white;
+        border-radius: 5px
+    };
+
+}
+
+@include breakpoint-up(medium) {
+    .aboutme__info {
+        width: 80%;
+        margin: auto;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 33%;
+            max-height: 160px;
+        }
+        p, img {
+            margin: 10px;
+            
+        }
+        p {
+            margin-top: 20px;
+        }
+    }
+}
