@@ -1,9 +1,6 @@
 
 .nav {
-<<<<<<< HEAD
     position: relative;
-=======
->>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
     background-color: $secondary;
     padding: 0.5rem;
     margin: 0;
@@ -57,11 +54,7 @@
     
       
     .hide-for-desktop {
-<<<<<<< HEAD
          @include breakpoint-up(large){
-=======
-         @include breakpoint-up(medium){
->>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
             display: none;
         }
     }
@@ -70,7 +63,6 @@
 
 .mobile__menu {
     visibility: hidden;
-<<<<<<< HEAD
     top: -100%;
     position: relative;
     background-color: #fff;
@@ -130,74 +122,21 @@
 
 
 
-=======
-    position: absolute;
-    margin: 0 10px;
-    height: 50vh;
-    top: -50vh;
-    left: 0;
-    right: 0;
-    border-radius: 0px 0px 12px 14px;
-    background-color: white;
-    transition: top 250ms ease-in-out;   
-}
-
-.mobile__menu {
-    @include breakpoint-up(medium){
-       display: none;
-   }
-}
-
-.menu__open {
-    top: 40px;
-    visibility: inherit;
-    top: 40px;
-    z-index: -9999;
-    
-    >a {
-        position: relative;
-        font-size: $font-xl;
-        font-weight: 900;
-        color: $secondary;
-        transition: all 200ms ease-in-out;
-        &:not(:last-child) {
-            margin-bottom: 25px;
-        }
-
-        &:hover {
-            transform: scale(1.1);
-            color:purple;
-        }
-    }
-}
->>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
     
 
 // Desktop
 
 .desktop__links {
     position: absolute;
-<<<<<<< HEAD
     right: 1rem;
  
     .nav__items {
-        >a {
+        >a { 
             font-size: 1rem;
             font-weight: 100;
             margin: 10px;
             transition: all 200ms ease-in-out;
             &:hover { 
-=======
-    right: 0;
-
-    .nav__items {
-        >a {
-            font-size: $font-sm;
-            font-weight: 100;
-            margin: 10px;
-            transition: all 200ms ease-in-out;
-            &:hover {
->>>>>>> 276145d7908cd0193ee052d8eaa79fcfbd1045d7
                 color: $primary;
                 transform:scale(1.05);
             }
